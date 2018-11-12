@@ -10,6 +10,7 @@ box-sizing: border-box;
   --white:#fff;
   --blueDark : #263D4B ;
   --green : #95CA3E;
+  --blue :#007ACC;
 }
 
 header{
@@ -112,7 +113,7 @@ input[type=text]
 
 .hero-slogan{
   font-size: 1.3em;
-  margin:0 0 1em 0;
+  margin:0;
 }
 
 .hero-title {
@@ -121,7 +122,7 @@ input[type=text]
   justify-content: center;
   margin: 0;
   padding: .2em 0;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .search-hero {
@@ -184,7 +185,7 @@ input[type=text]
 }
 
 .itemCarr{
-  padding: 1em .5em;
+  padding: 1em 0;
   background-color: var(--white);
   border-radius: 4px;
   box-shadow: 0 0 12px 1px rgba(0,0,0,.1)
@@ -198,10 +199,41 @@ input[type=text]
 }
 
 .infoCarrera{
-  width: 270px;
-  padding: 0 0 0 .5em;
+  padding: 0 0 0 .4em;
 }
 
 .infoCarrera p,.infoCarrera h3{
   margin: 0;
 }
+
+.countCourses{
+  color: var(--blue)
+}
+
+.coursesIteration{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5em 0;
+}
+
+.fadeCourse{
+  animation-name: fadeCourses;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
+  animation-delay:2s;
+  animation-direction: alternate
+}
+
+@keyframes fadeCourses{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
