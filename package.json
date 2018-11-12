@@ -1,0 +1,19 @@
+{
+  "name": "platzi",
+  "version": "1.0.0",
+  "description": "landing-page",
+  "main": "index.js",
+  "scripts": {
+    "build:local": "npx postcss ./src/css/app.css -o dist/css/app.css -w"
+  },
+  "keywords": [
+    "platzi"
+  ],
+  "author": "AlexTexis",
+  "license": "MIT",
+  "devDependencies": {
+    "postcss": "^7.0.5",
+    "postcss-cli": "^6.0.1",
+    "postcss-cssnext": "^3.1.0"
+  }
+}
