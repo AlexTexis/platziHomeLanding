@@ -30,7 +30,12 @@ header{
   height: inherit;
   
 }
-
+.navContainer{
+  height: inherit;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 nav{
   height: inherit;
 }
@@ -61,6 +66,9 @@ a{
   font-size: .8em;
 }
 
+.menu{
+  display: none
+}
 .btnSesion {
   font-family: 'Montserrat';
   font-size: .8em;
@@ -158,6 +166,10 @@ input[type=text]
   font-size: 1.2em;
 }
 
+.hero-info{
+  font-size: 1em;
+}
+
 .plan{
   color: var(--green);
   font-size: 1em;
@@ -175,6 +187,14 @@ input[type=text]
 .carrer-title,.carrer-subDesc{
   text-align: center;
   margin: .5em 0;
+}
+
+.carrer-title{
+  font-size: 1.5em;
+}
+
+.carrer-subDesc{
+  font-size: .9em
 }
 
 .carrersItem{
@@ -223,3 +243,99 @@ input[type=text]
   padding: .5em 0;
 }
 
+@media screen and (max-width:1024px){
+  .carrersItem{
+    padding: 1em .7em;
+  }
+}
+
+@media screen and (max-width:1020px)
+{
+  .search-nav{
+    display: none;
+  }
+
+  .infoCarrera{
+    font-size: .9em;
+  }
+  
+  .itemCarr{
+  height: auto;
+
+  }
+
+  .itemCarr img{
+    width: 30px;
+
+  }
+
+  .infoCarrera p,.infoCarrera span{
+    display: none;
+  }
+
+  .hero{
+    padding: 1em 0;
+  }
+
+  .carrer-title {
+    font-size: 1.2em;
+  }
+.carrer-subDesc
+  {
+    font-size: .8em;
+  }
+}
+
+
+@media screen and (max-width:768px){
+    .carrersItem{
+      grid-template-columns: 1fr;
+      grid-gap: .7em;
+    }
+
+    .itemCarr{
+     height: 50px;
+    }
+
+    .menu{
+      display: block;
+    }
+
+    nav{
+      position: absolute;
+      left: 0;
+      top:50px;
+      right: 0;
+      height: auto;
+      background-color: #263D4B;
+      display: none;
+    }
+
+    nav ul{
+      display: block;
+      padding: 0 .7em 1em;
+    }
+
+    nav li{
+      padding: .5em 0;
+      border-bottom: 1px solid rgba(256,256,256,.2);
+      margin: 0;
+    }
+
+    nav li:last-child{
+    border: 0;
+    }
+
+    nav li:last-child:after{
+        display: none;
+    }
+
+    .hero-info{
+      font-size: .8em;
+    }
+  }
+
+  @media screen and (max-width:480px)
+  {
+    
+  }

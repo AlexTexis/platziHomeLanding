@@ -16,6 +16,7 @@ let countCourse= 0;
 const courseTitle = document.getElementById('coursesTitles')
 const badgeCarrera = document.getElementById('badgeCarrera')
 const coursesIteration = document.getElementById('coursesIteration')
+const menuToggle = document.getElementById('menuToggle')
 
 function fadeCourses()
 {
@@ -48,3 +49,4 @@ function reloadIteration()
 }
 
 fadeCourses()
+

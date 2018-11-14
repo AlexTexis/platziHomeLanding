@@ -10,21 +10,24 @@
 <body>
   <header>
       <picture class="logo"><img src="./dist/images/logo.png" alt="" width="85"></picture>
-      <nav>
-        <ul>
-          <li><a href="">Cursos</a></li>
-          <li><a href="">Contactanos</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Agenda</a></li>
-          <li><a href="">Foro</a></li>
-          <li><a href="">Iniciar mi plan</a></li>
-          <li><button class="btnSesion">Iniciar Sesion</button></li>
-         <form action="">
-           <input type="text" placeholder="Buscar en platzi">
-           <button class="search">°</button>
-         </form>
-        </ul>
-      </nav>
+      <div class="navContainer">
+        <nav>
+          <ul>
+            <li><a href="">Cursos</a></li>
+            <li><a href="">Contactanos</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Agenda</a></li>
+            <li><a href="">Foro</a></li>
+          </ul>
+        </nav>
+        <a href="#">Iniciar mi plan</a>
+        <button class="btnSesion">Iniciar Sesion</button>
+        <a href="#" id="menuToggle" class="menu">Menú</a>
+        <form action="" class="search-nav">
+          <input type="text" placeholder="Buscar en platzi">
+          <button class="search">°</button>
+        </form>
+      </div>
   </header>
   <section class="hero">
     <div class="hero-info">
@@ -37,7 +40,7 @@
         y 48 carreras mas
        </p>
        <form class="search-hero" action="">
-         <input type="text">
+         <input type="text" placeholder="Busca uno delos 245 cursos">
          <button>Buscar</button>
        </form>
       <p class="hero-description">Platzi es Educación Online Efectiva, por menos de $16 pesos al día</p>
