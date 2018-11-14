@@ -188,14 +188,17 @@ input[type=text]
   padding: 1em 0;
   background-color: var(--white);
   border-radius: 4px;
-  box-shadow: 0 0 12px 1px rgba(0,0,0,.1)
+  box-shadow: 0 0 12px 1px rgba(0,0,0,.1);
+  height: 80px;
+  display: flex;
+  align-items: center;
 }
 
 .itemCarr a{
   color: #000;
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding: 0 0 0 .7em;
 }
 
 .infoCarrera{
@@ -204,10 +207,13 @@ input[type=text]
 
 .infoCarrera p,.infoCarrera h3{
   margin: 0;
+  line-height: 15px;
 }
 
+
 .countCourses{
-  color: var(--blue)
+  color: var(--blue);
+  line-height: 15px;
 }
 
 .coursesIteration{
