@@ -335,7 +335,17 @@ input[type=text]
     }
   }
 
-  @media screen and (max-width:480px)
+  @media screen and (max-width:390px)
   {
-    
+    .btnSesion{
+      font-size:.7em;
+    }
+
+    .hero{
+      padding: 1em .7em;
+    }
+    .search-hero{
+      width: auto
+    }
   }
+
