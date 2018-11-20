@@ -1,5 +1,4 @@
 module.exports = {
-  require : {
     plugins : [
       require('postcss-cssnext')({
         features : {
@@ -8,7 +7,7 @@ module.exports = {
           }
         },
         customProperties : true
-      })
+      }),
+      require('cssnano')
     ]
   }
-}
